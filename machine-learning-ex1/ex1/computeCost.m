@@ -17,10 +17,10 @@ J = 0;
 %	J = J + (X(i,:) * theta - y(i))^2;
 %end;
 
-predictions = X * theta;
-sqrErr = (predictions-y).^2;
+%predictions = X * theta;
+%sqrErr = (predictions-y).^2;
 
-J = 1/(2*m) * sum(sqrErr);
+J = 1/(2*m) * sum((X*theta-y).^2);
 
 
 
